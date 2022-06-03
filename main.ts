@@ -8,9 +8,11 @@ input.onButtonPressed(Button.A, function () {
     maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CW, 255)
     maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CW, 0)
     basic.pause(2000)
-    maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CW, 255)
-    maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CW, 255)
+    maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CCW, 255)
+    maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CCW, 255)
     basic.pause(2000)
+    maqueen.motorStop(maqueen.Motors.M2)
+    maqueen.motorStop(maqueen.Motors.M1)
 })
 input.onButtonPressed(Button.B, function () {
     maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CW, 255)
